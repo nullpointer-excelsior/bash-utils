@@ -20,3 +20,6 @@ git branch | grep '*' | awk '{ print $2 }'
 
 # show files changes
 git log -p $COMMIT_ID
+
+# show history commit
+git log --oneline | fzf --preview 'git show --name-only {1}
