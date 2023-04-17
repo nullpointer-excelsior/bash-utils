@@ -6,7 +6,7 @@ dependency="$1"
 
 pip install "$dependency"
 
-version=$(pip freeze | grep "$dependency")
+version=$(pip freeze | grep -i "$dependency")
 
 echo "version installed: $version"
 
