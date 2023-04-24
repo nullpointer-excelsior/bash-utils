@@ -1,6 +1,6 @@
 #!/bin/bash
 
-omit_dirs="./venv|./node_modules"
+omit_dirs="./venv|.node_modules|.git|dist|build"
 
 directory=$(find . -type d -maxdepth 3 | grep -vE "$omit_dirs" | fzf --preview '/opt/homebrew/bin/lsd --color=always  -la {}')
 
