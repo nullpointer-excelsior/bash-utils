@@ -40,3 +40,6 @@ cat <<EOF > $FILE_NAME
 echo \$PWD
 echo $PWD
 EOF
+
+# Search for a text in files recursively.
+find /ruta/del/directorio -type f -exec grep -l "texto_a_buscar" {} +
