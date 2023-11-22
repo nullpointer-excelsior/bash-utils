@@ -43,3 +43,6 @@ EOF
 
 # Search for a text in files recursively.
 find /ruta/del/directorio -type f -exec grep -l "texto_a_buscar" {} +
+
+# sel text from a specific file line
+sed -n '32,34p' file-to-select.txt 
